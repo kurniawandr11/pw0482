@@ -1,0 +1,119 @@
+*{
+	padding: 0;
+	margin:0;
+}
+
+html, body{
+	
+	background-image: url(internet.jpg);
+	 background-attachment: fixed;
+	width: 100%;
+	height: 100%;	
+	background-repeat:
+}
+
+.cover {
+	background-image: url(gundam.jpg);
+	background-position: right;
+	background-color:#2874A6;
+	background-size: cover;
+	width: 100%;
+	height: 25%;
+	margin: auto;
+	padding: auto;
+}
+
+.cover h1{
+
+	padding-top: 30px;
+	color: #EDFDFF;
+	font-size: 30px;
+}
+
+.cover h2 {
+	padding-top: 10px;
+	color: #EDFDFF;
+}
+
+.article {
+	color: #EDFDFF;
+	margin: 10px;
+	text-indent: 30px;
+	padding-top: 50px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    word-spacing: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+    font-size: 110%;
+
+}
+
+p {
+	padding-top: 20px;
+}
+
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E9E9E9;
+}
+
+
+.Nav a {
+	
+	float:left;
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Nav a:hover {
+
+	background-color: #ddd;
+	color: blue;
+  	
+}
+
+
+
+.Nav input, button {
+	float: right;
+
+}
+
+.Nav button{
+
+	padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 50px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.Nav button: hover{
+
+	background-color: #ddd;
+	color: black;
+
+}
+
+.Nav input[type=text] {
+
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 0px;
+    font-size: 17px;
+}
+
+
+
