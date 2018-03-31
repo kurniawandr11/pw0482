@@ -1,0 +1,22 @@
+#data th {
+	background-color: #19B5FE;
+
+}
+
+
+table {
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color:;
+}
+
+td, th {
+    border: 1px solid #89C4F4;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #E4F1FE;
+}
