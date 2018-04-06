@@ -21,7 +21,6 @@ html, body{
 	height: 25%;
 	margin: auto;
 	padding: auto;
-	img
 }
 
 .cover h1{
@@ -48,15 +47,9 @@ html, body{
     text-align: justify;
     text-justify: inter-word;
     line-height: 30px;
-    font-size: 110%;
+    font-size: 20px;
 
 }
-
-.p1 {
-	padding-top: 20px;
-	font-size: 30px;
-}
-
 
  ul {
     list-style-type: none;
