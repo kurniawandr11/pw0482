@@ -1,19 +1,22 @@
 *{
-	padding: 0;
+	padding-top:0; 
 	margin:0;
 }
 
 .header{
-	
+	padding-top: 25px;
 	height: 120px;
-	background: #383838;
-	border-bottom: 5px solid black;	
+	background:#2e3030;
+	border-bottom: 5px solid cyan;	
 	color: white;
 }
 
-.
-}
 
-.menu{
-	background:#c4bec4;
+body{
+	background: rgba(76, 175, 80, 0.1);
+};
+
+
+.fa-apple{
+	color: 	red;
 }
