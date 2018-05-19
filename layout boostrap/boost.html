@@ -5,10 +5,37 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+		
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	
+	<script type="text/javascript">
+var app = angular.module("MyApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.htm"
+    })
+    .when("/about", {
+        templateUrl : "about.htm"
+    })
+    .when("/product", {
+        templateUrl : "Product.htm"
+    })
+    .when("/contact", {
+        templateUrl : "contact.htm"
+    });
+});
+</script>
+
+	
+	
 </head>
 
 <body>
-	<div class="container">
+	<div ng-app="MyApp"class="container-fluid">
 
 		<div class="row header">
 			<div class="col-12">
@@ -17,47 +44,14 @@
 		</div>
 
 		<div class="row menu">
-			<div class="col-12">
-				<p>Menu will be place here!</p>
+			<div class="col-12 text-center">
+				<a href="#/!">Home</a>
+				<a href="#/!about">about</a>
+				<a href="#/!Product">Product</a>
+				<a href="#/!contact">Contact</a>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-android fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your phone, taking up very little hard drive space
-					Natively integrated into android Finder
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-				
-			</div>
-
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-apple fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your desktop, taking up very little hard drive space
-					Natively integrated into Mac Finder
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-			</div>
-
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-windows fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your desktop, taking up very little hard drive space
-					Natively integrated into Windows Explorer
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-			</div>
-		</div>
-	
-	</div>
+		<ng-view></ng-view>
 </body>
 </html>
