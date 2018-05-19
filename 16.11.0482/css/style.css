@@ -1,0 +1,22 @@
+*{
+	padding-top:0; 
+	margin:0;
+}
+
+.header{
+	padding-top: 25px;
+	height: 120px;
+	background:#2e3030;
+	border-bottom: 5px solid cyan;	
+	color: white;
+}
+
+
+body{
+	background: rgba(76, 175, 80, 0.1);
+};
+
+
+h1 {
+	color:red;
+}

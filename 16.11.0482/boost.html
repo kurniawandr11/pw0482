@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>aaa</title>
+ <title>Web site</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -49,46 +49,8 @@ app.config(function($routeProvider) {
 				<a href="#/!contact">Contact</a>
 			</div>
 		</div>
-
-		<br>
 		
-	<div class="row">
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-android fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your phone, taking up very little hard drive space
-					Natively integrated into android Finder
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-				
-			</div>
-
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-apple fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your desktop, taking up very little hard drive space
-					Natively integrated into Mac Finder
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-			</div>
-
-			<div class="col-4 text-center">
-				<h1><i class="fab fa-windows fa-2x"></i></h1>
-				<p>
-					<br>Access all your Box files directly from your desktop, taking up very little hard drive space
-					Natively integrated into Windows Explorer
-					Easily share and collaborate on files
-				</p>
-				<br>
-				<button type="button" class="btn btn-primary">Download Now</button>
-			</div>
-		</div>
-	
-	</div>
+		<div ng-view></div>	
 
 </body>
 </html>
