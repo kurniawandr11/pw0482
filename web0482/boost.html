@@ -19,13 +19,42 @@ app.config(function($routeProvider) {
     .when("/about", {
         templateUrl : "about.htm"
     })
-    .when("/product", {
-        templateUrl : "Product.htm"
+    .when("/Product", {
+        templateUrl : "product.htm",
+        controller: 'productCtrl'
+
     })
     .when("/contact", {
         templateUrl : "contact.htm"
+    }) 
+
+    .when("/weather", {
+        templateUrl : "weather.htm",
+        controller: 'weatherCtrl'
+
     });
 });
+
+
+
+	app.controller('productCtrl', function($scope){
+		$scope.title="aaaaaa";
+	});
+
+
+
+
+	app.controller('weatherCtrl', function($scope, $http){
+		var url = 'http://api.openweathermap.org/data/2.5/weather?q=sleman,id&appid=4de4dd041e499ca8a4f6692097befdae';
+		$http.get(url).then(function(response){
+		$scope.info = response.data;
+	})
+ 		$scope.title="Weather Description";
+});
+
+
+
+
 </script>
 
 	
@@ -45,8 +74,10 @@ app.config(function($routeProvider) {
 			<div class="col-12 text-center">
 				<a href="#/!">Home</a>
 				<a href="#!about">about</a>
-				<a href="#/!Product">Product</a>
-				<a href="#/!contact">Contact</a>
+				<a href="#!Product">Product</a>
+				<a href="#!weather">Weather</a>
+				<a href="#!contact">Contact</a>
+				
 			</div>
 		</div>
 		
