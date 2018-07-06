@@ -6,7 +6,8 @@
 html, body{
 	
 	background-image: url(internet.jpg);
-	 background-attachment: fixed;
+	background-attachment: fixed;
+	background-height : 100%;
 	width: 100%;
 	height: 100%;	
 	background-repeat:
